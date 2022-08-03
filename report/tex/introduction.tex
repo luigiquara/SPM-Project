@@ -1,0 +1,12 @@
+\section{Introduction}
+The project consists in the implementation of a simple motion detection algorithm.
+The process can be divided in four main operations:
+
+\begin{itemize}
+    \item \emph{Load}: Get a frame from the source video and store it in memory;
+    \item \emph{To Greyscale}: Transform the frame from a \emph{RGB} image in a greyscale one, by substituting the value of each pixel with the average of the values from the three channels; 
+    \item \emph{Smoothing}: Apply a filter to the image, with the effect that each pixel is averaged with the values of its neighbors;
+    \item \emph{Detection}: Compare the processed frame with the background image, \emph{i.e.} the first frame of the video; the algorithm detects a motion if the number of different pixels between the current frame and the background is greater than a given threshold.
+\end{itemize}
+
+In the end, the algorithm returns the number of frames with motion.

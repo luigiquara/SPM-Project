@@ -1,0 +1,80 @@
+\documentclass[10pt]{article}
+\usepackage[english]{babel}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{makecell}
+\setmarginsrb{2cm}  % left margin
+             {2cm}  % top margin
+             {2cm}  % right margin
+             {2cm}  % bottom margin
+             {1.5cm}  % head height
+             {1cm}  % head sep
+             {1.5cm}  % foot height
+             {1cm}  % foot sep
+\usepackage{hyperref}
+\usepackage{comment}
+\usepackage{caption}
+
+\title{Video Motion Detection}
+\author{Luigi Quarantiello}
+\date{July, 2022}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Parallel and Distributed Systems}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+    \vspace*{0.5 cm}
+    \includegraphics[scale = 0.5]{img/unipi.png}\\[1.0 cm]
+    \textsc{\LARGE University of Pisa}\\[0.5 cm]
+    \textsc{\Large Department of Computer Science}\\[1.5 cm]
+	\textsc{\large Parallel and Distributed Systems}\\[0.5 cm]
+	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+	{ \huge \bfseries \thetitle}\\
+	\rule{\linewidth}{0.2 mm} \\[1.5 cm]
+	%\centering \textsc{\large \emph{Author:}}\\[0.5 cm]
+	\begin{minipage}{0.4\textwidth}
+		\begin{center} \large
+			\textbf{\theauthor}
+		\end{center}
+		\end{minipage}~
+		\begin{minipage}{0.4\textwidth}
+	\end{minipage}\\[2 cm]
+	{\large \thedate}\\[2 cm]
+	\vfill
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+\bibliographystyle{plain}
+\bibliography{biblist}
+
+\input{introduction.tex}
+\input{design.tex}
+\pagebreak
+\input{implementation.tex}
+\pagebreak
+\input{results.tex}
+
+\end{document}
