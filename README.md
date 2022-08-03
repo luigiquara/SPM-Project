@@ -1,6 +1,6 @@
 # SPM-Project
 
-Project for the **Parallel and Distributed Systems: Paradigms and Models" 2022 exam.
+Project for the **Parallel and Distributed Systems: Paradigms and Models** 2022 exam.
 
 Video motion detect (AV)
 Simple motion detection may be implemented by subtracting video frames from some background
